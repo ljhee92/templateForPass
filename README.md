@@ -3,7 +3,7 @@
 ├── Application.java : 어플리케이션 실행
 ├── config
 │   └── AppConfig.java : 의존성 주입
-├── controller
+├── mainController
 │   └── Controller.java : 프로그램 전체 흐름 조절
 ├── util
 │   ├── ErrorMessage.java : 예외 메시지 enum

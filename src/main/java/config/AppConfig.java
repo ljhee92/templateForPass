@@ -1,12 +1,13 @@
 package config;
 
-import controller.Controller;
+import controller.MainController;
+import service.MainService;
 import view.InputView;
 import view.OutputView;
 
 public class AppConfig {
-    public Controller controller() {
-        return new Controller(inputView(), outputView());
+    public MainController controller() {
+        return new MainController(inputView(), outputView(), mainService());
     }
 
     private InputView inputView() {
@@ -15,5 +16,9 @@ public class AppConfig {
 
     private OutputView outputView() {
         return new OutputView();
+    }
+
+    private MainService mainService() {
+        return new MainService();
     }
 }
