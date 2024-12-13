@@ -17,7 +17,7 @@ public class ResourceReader {
             closeReader(bufferedReader, fileReader);
             return lines;
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(ErrorMessage.FILE_READ_EXCEPTION.getMessage());
         }
     }
 
