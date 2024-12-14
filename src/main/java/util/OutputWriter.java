@@ -14,6 +14,7 @@ public interface OutputWriter {
     }
 
     default void displayFormat(String format, Object ... args) {
-        System.out.println(String.format(format, args));
+        System.out.printf(format, args);
+        System.out.println();
     }
 }
